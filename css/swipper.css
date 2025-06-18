@@ -1,0 +1,8 @@
+swiper-container{
+    max-width: 620px;
+    height: 440px;
+}
+
+swiper-slide{
+    background-color: white;
+}

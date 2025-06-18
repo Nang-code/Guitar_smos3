@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar</title>
+    <!-- ----------------------Link-bootstrap-------------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- -------------------------------------------------------------------- -->
+
+    <!-- ----------------------Other----------------------------------------- -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swipper.css">
+    <link rel="shortcut icon" href="./assets/imag/logo.png" type="icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- -------------------------------------------------------------------- -->
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <header>
+            <nav class="navbar border-bottom">
+                <!-- ---------------Logo------------------ -->
+                <div class="container p-0 py-2">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/imag/logo.png" alt="" style="width: 55px;">
+                        <h1 class="font-logo m-0 ms-1 text-coffee-800">Guitar-smos</h1>
+                    </div>
+                    <!-- ----------------------------------- -->
+                    <!-- ------------Menu------------------- -->
+                    <ul class="nav font-roboto d-none d-lg-flex">
+                        <a href="" class="nav-link text-coffee-800 fs-5">
+                            <li class="hover-rular">GUITAR</li>
+                        </a>
+                        <a href="" class="nav-link text-coffee-800 fs-5">
+                            <li class="hover-rular">BASSES</li>
+                        </a>
+                        <a href="" class="nav-link text-coffee-800 fs-5">
+                            <li class="hover-rular">AMPS</li>
+                        </a>
+                        <a href="" class="nav-link text-coffee-800 fs-5">
+                            <li class="hover-rular">PARTS</li>
+                        </a>
+                        <a href="" class="nav-link text-coffee-800 fs-5">
+                            <li class="hover-rular ">ACCESSORIES</li>
+                        </a>
+                    </ul>
+                    <!-- -----------------Menu------------------ -->
+                    <!------------ Search & language -------------->
+                    <div class="d-none d-lg-flex align-items-center">
+                        <form action="" class="d-flex align-items-center border rounded-2">
+                            <input type="text" name="" id="" class="form-control bg-transparent shadow-none border"
+                                placeholder="Search..">
+                            <button class="btn border-0">
+                                <i class="bi bi-search"></i>
+                            </button>
+
+                        </form>
+                        <select name="" id="" class="form-select w-25 shadow-none ms-2 border">
+                            <option value="kh">KH</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
+                    <!-- ---------------Search & language -------------->
+                    <button class="btn border-0 d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <!-- offcanvas-for-mobile -->
+        <div class="offcanvas offcanvas-end" id="sidebar">
+            <div class="offcanvas-header border-bottom">
+                <!-- ---------------Logo------------------ -->
+                <div class="d-flex align-items-center">
+                    <img src="./assets/imag/logo.png" alt="" style="width: 55px;">
+                    <h1 class="font-logo m-0 ms-1 text-coffee-800">Guitar-smos</h1>
+                </div>
+                <!-- ----------------------------------- -->
+
+                <button class="btn-close shadow-none" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- ------------Menu------------------- -->
+                <ul class="nav font-roboto d-block">
+                    <a href="" class="text-decoration-none text-coffee-800 fs-5">
+                        <li class="hover-rular">GUITAR</li>
+                    </a>
+                    <a href="" class="text-decoration-none text-coffee-800 fs-5">
+                        <li class="hover-rular">BASSES</li>
+                    </a>
+                    <a href="" class="text-decoration-none text-coffee-800 fs-5">
+                        <li class="hover-rular">AMPS</li>
+                    </a>
+                    <a href="" class="text-decoration-none text-coffee-800 fs-5">
+                        <li class="hover-rular">PARTS</li>
+                    </a>
+                    <a href="" class="text-decoration-none text-coffee-800 fs-5">
+                        <li class="hover-rular ">ACCESSORIES</li>
+                    </a>
+                </ul>
+                <!-- -----------------Menu------------------ -->
+                <!------------ Search & language -------------->
+                <div class="d-flex align-items-center mt-3">
+                    <form action="" class="d-flex align-items-center border rounded-2">
+                        <input type="text" name="" id="" class="form-control bg-transparent shadow-none border"
+                            placeholder="Search..">
+                        <button class="btn border-0">
+                            <i class="bi bi-search"></i>
+                        </button>
+
+                    </form>
+                    <select name="" id="" class="form-select w-25 shadow-none ms-2 border">
+                        <option value="kh">KH</option>
+                        <option value="en">EN</option>
+                    </select>
+                </div>
+                <!-- ---------------Search & language -------------->
+            </div>
+        </div>
+        <!-- offcanvas-for-mobile -->
+        <main>
+            <!------------- Hero ------------------------>
+            <div class="container-fluid p-0">
+                <div class="container p-0">
+                    <div class="row m-0">
+                        <div class="col-12 col-md-6 p-0 py-5 font-roboto d-md-grid align-content-center z-3">
+                            <div class="text-center text-md-start">
+                                <h2 class="text-uppercase text-secondary fw-normal">Back to the Original</h2>
+                                <h1 class="fw-bold" style="font-size: clamp(45px,4vw,120px);">ACCOUSTIC 80'S GUITAR</h1>
+                                <button class="btn bg-coffee-700 text-light">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-5">
+                            <swiper-container init="false" class="mySwiper">
+                                <swiper-slide title="Drag on it">
+                                    <img src="./assets/imag/guitar_pro3.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <img src="./assets/imag/guitar_pro2.png" alt="" class="w-100 h-100 object-fit-contain">
+                                </swiper-slide>
+                            </swiper-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------- Hero ------------------------>
+
+            <div class="container p-0 py-4 text-center font-roboto">
+                <h2 class="m-0">GUITAR LIST</h2>
+                <hr style="height: 3px; width: 80px;" class="mx-auto my-0 bg-coffee-800 mb-4">
+                <div class="d-flex font-roboto overflow-x-auto">
+                    <div class="col-6 col-md-4 col-lg-3 text-center">
+                        <div style="width: 110px; height: 110px;" class="mx-auto">
+                            <img src="./assets/icon/guitaricon.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h4 class="my-2">ELECTRONIC</h4>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 text-center">
+                        <div style="width: 110px; height: 110px;" class="mx-auto">
+                            <img src="./assets/icon/guitaricon1.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h4 class="my-2">ACCOUSTIC</h4>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 text-center">
+                        <div style="width: 110px; height: 110px;" class="mx-auto">
+                            <img src="./assets/icon/guitaricon2.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h4 class="my-2">GUITARBASS</h4>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 text-center">
+                        <div style="width: 110px; height: 110px;" class="mx-auto">
+                            <img src="./assets/icon/guitaricon3.png" alt="" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <h4 class="my-2">ACCESSORIES</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!---------- pree order Content------------- -->
+            <div class="container">
+                <div class="row align-items-center m-0 my-3">
+                    <div class="col-12 col-lg-4">
+                        <div class="card overflow-hidden">
+                            <div style="height: 340px;">
+                                <img class="w-100 h-100 object-fit-cover" src="./assets/imag/franklin.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 font-roboto">
+                        <div class="my-3 my-md-0">
+                            <h2 class="m-0">60TH ANIVERSARY</h2>
+                            <hr width="100px" class="border-3 bg-black my-0" style="height: 2px;">
+                            <p class="my-3 text-secondary fs-4">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint dolores nihil labore
+                                reiciendis dignissimos quaerat ex eligendi, omnis aut molestiae! Qui officiis accusamus
+                                ducimus
+                                eveniet ut blanditiis incidunt sunt.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sint dolores nihil labore
+                                reiciendis dignissimos quaerat ex eligendi, omnis aut molestiae! Qui officiis accusamus
+                                ducimus
+                                eveniet ut blanditiis incidunt sunt.
+                            </p>
+                            <button class="btn bg-coffee-700 text-light">Pre Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------- pree order Content------------- -->
+
+
+            <div class="container p-0 py-4 text-center font-roboto">
+                <h2 class="m-0">WHAT NEW</h2>
+                <hr style="height: 3px; width: 80px;" class="mx-auto my-0 bg-coffee-800 mb-4">
+
+                <div class="row m-0">
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro4.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro1.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro2.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro3.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- ----------------Pick up Content----------------- -->
+            <div class="container p-0 py-4 text-center font-roboto">
+                <div class="d-flex justify-content-between align-items-center px-3 mb-3">
+                    <div class="col-5 col-md-3 col-lg-2">
+                        <select name="" id="" class="form-select shadow-none border rounded-0">
+                            <option value="">BASE</option>
+                            <option value="">ACCOUSTIC</option>
+                        </select>
+                    </div>
+                    <div class="col-5 text-end">
+                        <h2 class="m-0">Pick Up Guitar</h2>
+                        <hr style="height: 3px; width: 80px;" class="my-0 bg-coffee-800 mt-2 float-end">
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro4.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro1.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro2.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="hover-bg transition">
+                            <div style="max-height: 500px;">
+                                <img src="./assets/imag/guitar_pro3.png" alt="" class="w-100 h-100 object-fit-cover">
+                            </div>
+                            <p class="fs-5 pb-3">ELECTRIC 40TH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------Pick up Content----------------- -->
+        </main>
+        <!-- ---------------- footer ----------------- -->
+        <footer class="container-fluid p-0 position-relative mt-5">
+            <div class="container bg-danger position-absolute row align-items-center m-0 py-4 mt-2 mt-lg-0"
+            style="height: 120px; top: 0; left: 50%; transform: translate(-50%,-50%);">
+                <div class="col-lg-6 text-light">
+                    <h2 class="text-uppercase m-0">SUBSCRIBE TO FIND NEW</h2>
+                <hr width="100px" class="border-3 bg-black my-0" style="height: 2px;">
+                </div>
+                <div class="col-lg-6">
+                    <form action="" class="d-flex bg-body mt-2 mt-lg-0">
+                        <input type="search" class="form-control shadow-none border-0 rounded-0 bg-transparent py-3" placehokder="Enter Email">
+                        <button class="btn btn-dark rounded-0 px-lg-5">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bg-black ">
+                <div class="container p-0 pt-3 pt-lg-0">
+                    <div class="row mt-0 mt-5 pt-5">
+                        <div class="col-lg-4 p-5  mt-5 mt-lg-0 text-light">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/imag/logo.png" alt="" style="width: 55px;">
+                                <h1 class="font-logo m-0 ms-1 text-coffee-800">Guitar-smos</h1>
+                            </div>
+                            <p class="fs-5 mb-0 mt-3">Lorem ipsum dolor sit.</p>
+                            <p class="fo-5">Follow Us:</p>
+                            <ul class="nav mt-2 d-flex">
+                                <li class="ps-0 nav-link text-light fs-4">
+                                    <i class="bi bi-facebook"></i>
+                                </li>
+                                <li class="ps-0 nav-link text-light fs-4">
+                                    <i class="bi bi-messenger"></i>
+                                </li>
+                                <li class="ps-0 nav-link text-light fs-4">
+                                    <i class="bi bi-instagram"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 mt-lg-5">
+                            <div class="row text-light">
+                                <div class="col-6">
+                                    <h2>Products</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="fs-4">Electric Fuitar</li>
+                                        <li class="fs-4">Accounstic Fuitar</li>
+                                        <li class="fs-4">Basses</li>
+                                        <li class="fs-4">Piano</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h2>Products</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="fs-4">Electric Fuitar</li>
+                                        <li class="fs-4">Accounstic Fuitar</li>
+                                        <li class="fs-4">Basses</li>
+                                        <li class="fs-4">Piano</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mt-lg-5">
+                            <div class="row text-light">
+                                <div class="col-6">
+                                    <h2>Help</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="fs-4">Privacy Portal</li>
+                                        <li class="fs-4">Terms of Use</li>
+                                        <li class="fs-4">FAQ's</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h2>Customer Service</h2>
+                                    <ul class="list-unstyled">
+                                        <li class="fs-4">Support</li>
+                                        <li class="fs-4">Serial Number </li>
+                                        <li class="fs-4">Warranty</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ---------------- footer ----------------- -->
+    </div>
+</body>
+<script src="./script/swipper.js"></script>
+
+<!-- <script src="./script/script.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="./script/slick.js6"></script>
+
+</html>
